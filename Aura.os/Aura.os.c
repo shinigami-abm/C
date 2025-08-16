@@ -105,7 +105,11 @@ bool commandes( int a, his head){
 	case 6:
 	     printf("exit= exit the shell.\nwhere= pwd.\ntime= date.\nsearch= ls -l.\nempty= clear.\ncmd= show commandes.\n");
 	     _exit(0);
-	break;     
+	break; 
+	case 4:
+	     print(head);
+	     _exit(0);
+	break;      
       }
      }
      else{ printf("there is a problem.\n");} // if fork faild
@@ -253,9 +257,6 @@ int main(){
      if(a == 0){
 	     return 333;
      }
-     else if(a == 4){
-	     print(head);
-          }
           else if(a != 404){
               commandes(a, head);
                } 
